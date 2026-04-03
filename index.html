@@ -1,1230 +1,1030 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width initial-scale=1" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<!-- Google Tag Manager -->
-		<script>
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != 'dataLayer' ? '&l=' + l : '';
-				j.async = true;
-				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');
-		</script>
-		<!-- End Google Tag Manager -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-PGZH8HT");
+        </script>
+        <!-- End Google Tag Manager -->
 
-		<!-- Materialize - Compiled and minified CSS-->
-		<link
-			rel="stylesheet"
-			href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"
-		/>
-		<!-- Font Awesome Icon - CSS-->
-		<link
-			rel="stylesheet"
-			href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-		/>
-		<!-- Custom Styles-->
-		<link rel="stylesheet" href="/assets/css/style.css" />
-		<title>Simon Okello | Software Developer</title>
+        <!-- Google Fonts: Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+        <!-- Font Awesome 6 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-			gtag('config', 'UA-126939217-2');
-		</script>
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="/assets/css/style.css" />
 
-		<!-- Open Graph-->
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Simon Okello | Software Developer" />
-		<meta property="og:description" content="Software Developer" />
-		<meta property="og:url" content="https://simonokello.github.io/" />
-		<meta property="og:site_name" content="Simon Okello | Software Engineer" />
-		<meta
-			property="article:publisher"
-			content="https://simonokello.github.io/"
-		/>
-		<meta
-			property="og:image"
-			content="https://simonokello.github.io/examples/preview.png"
-		/>
-		<!-- Twitter -->
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@simon_d_okello" />
-		<meta
-			name="twitter:title"
-			content="Simon |Coder | Engineer | Explorer | Minimalist"
-		/>
-		<meta name="twitter:description" content="Software Engineer" />
-		<meta name="twitter:url" content="https://x.com/simon_d_okello" />
-		<meta name="author" content="Simon Okello" />
-		<meta
-			name="keywords"
-			content="Resume,resume,cv,developer resume,simon okello, simon, okello,Software,Engineer "
-		/>
-		<meta
-			name="description"
-			content="Software Developer with a passion for backend development and artificial intelligence."
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="57x57"
-			href="/assets/img/favicon/apple-icon-57x57.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="60x60"
-			href="/assets/img/favicon/apple-icon-60x60.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="72x72"
-			href="/assets/img/favicon/apple-icon-72x72.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="76x76"
-			href="/assets/img/favicon/apple-icon-76x76.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="114x114"
-			href="/assets/img/favicon/apple-icon-114x114.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="120x120"
-			href="/assets/img/favicon/apple-icon-120x120.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="144x144"
-			href="/assets/img/favicon/apple-icon-144x144.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="152x152"
-			href="/assets/img/favicon/apple-icon-152x152.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="/assets/img/favicon/apple-icon-180x180.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="192x192"
-			href="/assets/img/favicon/android-icon-192x192.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="/assets/img/favicon/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="96x96"
-			href="/assets/img/favicon/favicon-96x96.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="/assets/img/favicon/favicon-16x16.png"
-		/>
-		<link rel="manifest" href="/assets/img/favicon/manifest.json" />
-		<meta name="msapplication-TileColor" content="#ffffff" />
-		<meta
-			name="msapplication-TileImage"
-			content="/assets/img/favicon/ms-icon-144x144.png"
-		/>
-		<meta name="theme-color" content="#ffffff" />
-		<meta name="robots" content="index, follow" />
-		<!-- Google Site Verification for indexing -->
-		<meta
-			name="google-site-verification"
-			content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84"
-		/>
-	</head>
+        <title>Simon Okello | Software Developer</title>
 
-	<body>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript
-			><iframe
-				src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-				height="0"
-				width="0"
-				style="display: none; visibility: hidden"
-			></iframe>
-		</noscript>
+        <!-- Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-126939217-2");
+        </script>
 
-		<!-- Navigation Menu-->
-		<!-- Nav class 1 -->
-		<nav class="hide-on-small-only">
-			<ul class="side-nav fixed section table-of-contents">
-				<li class="logo">
-					<a
-						id="logo-container"
-						aria-label="Navigate to the beginning of the page"
-						href="#intro"
-						class="brand-logo grey-blue-text"
-					>
-						<img
-							src="/assets/img/passport-photo.JPG"
-							class="circle img-responsive profile-pic"
-							alt="avatar"
-						/>
-					</a>
-				</li>
+        <!-- Open Graph -->
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Simon Okello | Software Developer" />
+        <meta
+            property="og:description"
+            content="CTO & Software Developer specialising in backend engineering and fintech."
+        />
+        <meta property="og:url" content="https://simonokello.github.io/" />
+        <meta
+            property="og:site_name"
+            content="Simon Okello | Software Engineer"
+        />
+        <meta
+            property="og:image"
+            content="https://simonokello.github.io/examples/preview.png"
+        />
 
-				<li class="bold">
-					<a
-						aria-label="Navigate to the About section"
-						href="#about"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-social-person small"></i><span>About</span></a
-					>
-				</li>
-				<li class="bold">
-					<a
-						aria-label="Navigate to the Experience section"
-						href="#experience"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-action-trending-up small"></i
-						><span>Experience</span></a
-					>
-				</li>
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@simon_d_okello" />
+        <meta
+            name="twitter:title"
+            content="Simon Okello | CTO · Engineer · Builder"
+        />
+        <meta
+            name="twitter:description"
+            content="CTO & Software Developer specialising in backend engineering and fintech."
+        />
+        <meta name="twitter:url" content="https://x.com/simon_d_okello" />
 
-				<li class="bold">
-					<!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-					<a
-						aria-label="Navigate to the Projects section"
-						href="#projects"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-av-my-library-books small"></i
-						><span>Projects</span></a
-					>
-				</li>
+        <!-- SEO -->
+        <meta name="author" content="Simon Okello" />
+        <meta
+            name="keywords"
+            content="Simon Okello, Software Developer, CTO, Python, Django, FastAPI, Backend Engineer, Nairobi, Kenya"
+        />
+        <meta
+            name="description"
+            content="Simon Okello — CTO and Software Developer with expertise in Python, Django, FastAPI, and fintech API development based in Nairobi, Kenya."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="google-site-verification"
+            content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84"
+        />
+        <meta name="theme-color" content="#0f172a" />
 
-				<li class="bold">
-					<!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-					<a
-						aria-label="Navigate to the Skills section"
-						href="#skills"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-action-assessment small"></i><span>Skills</span></a
-					>
-				</li>
+        <!-- Favicons -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="/assets/img/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="/assets/img/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="/assets/img/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="/assets/img/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="/assets/img/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="/assets/img/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="/assets/img/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="/assets/img/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/img/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/assets/img/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="/assets/img/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#0f172a" />
+        <meta
+            name="msapplication-TileImage"
+            content="/assets/img/favicon/ms-icon-144x144.png"
+        />
+    </head>
 
-				<li class="bold">
-					<!--
-        ICONS:
-        -->
-					<a
-						aria-label="Navigate to the Education section"
-						href="#education"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-social-school small"></i><span>Education</span></a
-					>
-				</li>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe>
+        </noscript>
 
-				<li class="bold">
-					<!--
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-					<a
-						aria-label="Navigate to the Contact section"
-						href="#contact"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-content-mail small"></i><span>Contact</span></a
-					>
-				</li>
+        <!-- ========================================
+             NAVIGATION
+             ======================================== -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <a href="#hero" class="nav-logo">Simon<span>.</span></a>
 
-				<li class="bold">
-					<!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-					<!-- <a aria-label="Open Simon's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-					<a
-						aria-label="Open Simon's resume in a new tab"
-						href="https://simonokello.github.io/assets/resume/resume.pdf"
-						target="_blank"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-file-folder-open small"></i><span>Resume</span></a
-					>
-				</li>
-			</ul>
-		</nav>
-
-		<!-- Nav class 2 -->
-		<nav class="hide-on-large only trigger z-depth-1">
-			<a
-				aria-label="Toggle visibility of the mobile navbar"
-				href="#"
-				data-activates="slide-out"
-				class="button-collapse"
-				><i class="mdi-navigation-menu"></i
-			></a>
-			<div class="name-title">
-				<a
-					id="name"
-					aria-label="Navigate to the beginning of the page"
-					href="#"
-					class="teal-text"
-					>Simon Okello</a
-				><span class="black-text">Software Developer</span>
-			</div>
-		</nav>
-
-		<!-- Nav class 3 -->
-		<nav class="hide-on-large only">
-			<ul id="slide-out" class="side-nav">
-				<li class="bold">
-					<a
-						aria-label="Navigate to the About section"
-						href="#about"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-social-person small"></i><span>About</span></a
-					>
-				</li>
-				<li class="bold">
-					<a
-						aria-label="Navigate to the Experience section"
-						href="#experience"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-action-trending-up small"></i
-						><span>Experience</span></a
-					>
-				</li>
-				<li class="bold">
-					<a
-						aria-label="Navigate to the Projects section"
-						href="#projects"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-av-my-library-books small"></i
-						><span>Projects</span></a
-					>
-				</li>
-				<li class="bold">
-					<a
-						aria-label="Navigate to the Skills section"
-						href="#skills"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-action-assessment small"></i><span>Skills</span></a
-					>
-				</li>
-
-				<li class="bold">
-					<a
-						aria-label="Navigate to the Education section"
-						href="#education"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-social-school small"></i><span>Education</span></a
-					>
-				</li>
-				<li class="bold">
-					<a
-						aria-label="Navigate to the Contact section"
-						href="#contact"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-content-mail small"></i><span>Contact</span></a
-					>
-				</li>
-				<li class="bold">
-					<a
-						aria-label="Open Simon's Resume in a new tab"
-						href="https://drive.google.com/file/d/1nregxQsUFBUsdcI8UlIcs-ZjV5nj4lgc/view?usp=sharing"
-						target="_blank"
-						class="waves-effect waves-dark teal-text"
-						><i class="mdi-file-folder-open small"></i><span>Resume</span></a
-					>
-				</li>
-			</ul>
-		</nav>
-
-		<!-- Main Content-->
-		<main>
-			<!-- First Section: Heading lines and image -->
-			<section id="intro" class="section scrollspy full-height">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="col-md-9">
-						<div
-							class="content section-padding valign"
-							style="margin-left: 10%; margin-top: 50px"
-						>
-							<div class="caption">
-								<h2>Hi, I'm <span class="teal">Simon Okello.</span></h2>
-								<h5 style="color: #fff">
-									A
-									<span
-										class="typing"
-										style="font-weight: 300; color: #004d40"
-									></span>
-								</h5>
-								<!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-								<h5>
-									Self-driven, quick starter, passionate programmer with a
-									curious mind who enjoys solving a complex and challenging
-									real-world problems.
-								</h5>
-							</div>
-							<div class="social">
-								<a
-									href="https://www.linkedin.com/in/simonokello"
-									target="_blank"
-								>
-									<button class="icon-btn linkedin">
-										<i class="fa fa-linkedin"></i>
-									</button>
-								</a>
-								<a href="https://github.com/SimonOkello/" target="_blank">
-									<button class="icon-btn github">
-										<i class="fa fa-github"></i>
-									</button>
-								</a>
-
-								<!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
-                <button class="icon-btn angellist">
-                  <i class="fa fa-angellist"></i>
+                <button
+                    class="nav-toggle"
+                    id="navToggle"
+                    aria-label="Toggle navigation menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
-              </a> -->
 
-								<!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                <ul class="nav-links" id="navLinks">
+                    <li>
+                        <a href="#about" aria-label="About section">About</a>
+                    </li>
+                    <li>
+                        <a href="#experience" aria-label="Experience section"
+                            >Experience</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#projects" aria-label="Projects section"
+                            >Projects</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#skills" aria-label="Skills section">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#education" aria-label="Education section"
+                            >Education</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#contact" aria-label="Contact section"
+                            >Contact</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="/assets/resume/resume.pdf"
+                            target="_blank"
+                            class="nav-resume"
+                            aria-label="Open resume PDF"
+                            >Resume
+                            <i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                                style="font-size: 0.7rem"
+                            ></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-                  </span>
-              </a> -->
-							</div>
-							<div class="buttons">
-								<a href="#about" class="readme">Read More</a>
-								<a href="#contact" class="contactme">Contact Me</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <!-- ========================================
+             HERO
+             ======================================== -->
+        <section id="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Simon Okello</h1>
+                <h2 class="hero-role">A <span class="typing"></span></h2>
+                <p class="hero-desc">
+                    Self-driven, quick starter, passionate programmer with a
+                    curious mind who enjoys solving complex and challenging
+                    real-world problems.
+                </p>
 
-			<!-- Second Section: About -->
-			<section id="about" class="section scrollspy">
-				<h3 class="page-title white-text teal">About</h3>
-				<div class="container flow-text">
-					<!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
+                <div class="hero-social">
+                    <a
+                        href="https://www.linkedin.com/in/simonokello"
+                        target="_blank"
+                        class="social-icon"
+                        aria-label="LinkedIn profile"
+                        ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                    <a
+                        href="https://github.com/SimonOkello/"
+                        target="_blank"
+                        class="social-icon"
+                        aria-label="GitHub profile"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                        href="https://x.com/simon_d_okello"
+                        target="_blank"
+                        class="social-icon"
+                        aria-label="X (Twitter) profile"
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                </div>
 
-          </h2>
-        </blockquote> -->
-					<p>
-						I enjoy problem-solving and coding. Always strive to bring 100% to
-						the work I do. I have professional experience in technologies such
-						as Python, Django,FastAPI, Flask, MySQL, PostgreSQL, MongoDB,
-						ReactJS and NodeJS. I am passionate about developing complex
-						applications that solve real-world problems impacting millions of
-						users.
-					</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary"> About Me </a>
+                    <a
+                        href="/assets/resume/resume.pdf"
+                        target="_blank"
+                        class="btn btn-outline"
+                    >
+                        <i class="fa-solid fa-file-lines"></i> View Resume
+                    </a>
+                </div>
+            </div>
 
-					<ul>
-						<li><b>Languages:</b> Python, JavaScript</li>
-						<li><b>Databases:</b> MySQL, PostgreSQL, MongoDB,SQLite</li>
-						<li><b>Libraries:</b> NumPy, Pandas,Matplotlib</li>
-						<li><b>Frameworks:</b> Django,FastAPI,Flask, Node.js</li>
-						<li><b>Tools & Technologies:</b> Git, Docker, AWS, GCP,Nginx</li>
-					</ul>
-					<!-- <p>
-          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
-        </p> -->
-					<!-- <p>
-          Another Paragraph
-        </p>  -->
-					<!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
-				</div>
-			</section>
+            <div class="hero-scroll">
+                <a href="#about" aria-label="Scroll to About section">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
 
-			<!-- Third Section: Experience -->
-			<section id="experience" class="section scrollspy">
-				<h3 class="page-title white-text teal">Experience</h3>
-				<div class="container">
-					<!-- Latest Experience -->
-					<div class="card">
-						<div class="card-content">
-							<div class="row">
-								<div class="col s12 m2">
-									<a href="https://www.viewtech.co.ke" target="_blank"
-										><img
-											alt="Viewtech logo"
-											src="/assets/img/viewtech-logo.png"
-											class="responsive-img center-block"
-									/></a>
-								</div>
-								<!-- <div class="col s12 m10"> -->
-								<div class="col s12 m10">
-									<p>
-										<span class="card-title"
-											><a
-												href="https://www.viewtech.co.ke"
-												target="_blank"
-												class="teal-text hoverline"
-												>Viewtech Limited(SasaPay)</a
-											></span
-										>
-									</p>
-								</div>
-							</div>
-							<div class="role brown-text text-darken-2">
-								Sr. Software & DevOps Engineer
-							</div>
-							<ul>
-								<li>
-									Created and maintained the powerful Wallet as a Service (WAAS)
-									API, enhancing SasaPay’s service offerings and service
-									adoption by 60%Developed and managed the backend of an
-									e-commerce platform using Flask, MongoDB, and AWS..
-								</li>
-								<li>
-									Implemented and managed C2B, B2C, and B2B payment and
-									collection APIs, facilitating seamless transactions and
-									improving user experience which boosted transaction volume by
-									30% and enhanced user satisfaction by 25%.
-								</li>
-								<li>
-									Regularly updated the SasaPay Developer portal and API
-									documentation, ensuring clear and accessible resources for
-									developers which enhanced developer engagement by 40% and
-									reduced integration issues by 30%.
-								</li>
-								<li>
-									Led API integrations between SasaPay and partner systems,
-									ensuring smooth interoperability and expanding the ecosystem
-									which resulted in the expansion of the partner ecosystem by
-									25% and an increase in API usage by 30%.
-								</li>
-								<li>
-									Supported client onboarding and integration into the SasaPay
-									ecosystem, driving customer satisfaction and retention by 15%
-									and reducing onboarding time by 20%.
-								</li>
-								<li>
-									Maintained high code quality through clean and tested code
-									practices, contributing to the reliability and performance of
-									SasaPay services. This reduced system downtime by 30% and
-									decreased bugrelated issues by 25%.
-								</li>
-								<!-- <li>
-                <b>Tools:</b> Python, Flask, MongoDB
-              </li> -->
-							</ul>
-						</div>
-						<div class="card-action">
-							<span>December 2021 - Present | Nairobi, Kenya</span>
-						</div>
-					</div>
+        <!-- ========================================
+             ABOUT
+             ======================================== -->
+        <section id="about">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I enjoy problem-solving and coding. Always strive to
+                            bring 100% to the work I do. I have professional
+                            experience in technologies such as Python, Django,
+                            FastAPI, Flask, MySQL, PostgreSQL, MongoDB, ReactJS
+                            and NodeJS.
+                        </p>
+                        <p>
+                            I am passionate about developing complex
+                            applications that solve real-world problems
+                            impacting millions of users. Currently serving as
+                            CTO at Viewtech Limited (SasaPay), leading the
+                            technology vision for a growing fintech platform in
+                            East Africa.
+                        </p>
 
-					<div class="card">
-						<div class="card-content">
-							<div class="row">
-								<div class="col s12 m2">
-									<a href="https://www.sama.com" target="_blank"
-										><img
-											alt="Sama logo"
-											src="/assets/img/sama.jpg"
-											class="responsive-img center-block"
-									/></a>
-								</div>
-								<!-- <div class="col s12 m10"> -->
-								<div class="col s12 m10">
-									<p>
-										<span class="card-title"
-											><a
-												href="https://www.sama.com"
-												target="_blank"
-												class="teal-text hoverline"
-												>Sama</a
-											></span
-										>
-									</p>
-								</div>
-							</div>
-							<div class="role brown-text text-darken-2">Quality Analyst</div>
-							<ul>
-								<li>
-									Reviewed and assessed annotated data for AI algorithms to
-									ensure accuracy and quality.
-								</li>
-								<li>
-									Oversaw agent work to ensure compliance with client
-									requirements and internal standards.
-								</li>
-								<li>
-									Created daily progress reports and delivered constructive
-									feedback to agents to improve performance.
-								</li>
-								<li>
-									Monitored key performance indicators (KPIs) such as Total
-									Process Time (TPT) and throughput to gauge agent efficiency
-									and productivity.
-								</li>
-								<li>
-									Performed regular quality audits to identify areas of
-									improvement and ensure consistent quality standards.
-								</li>
-							</ul>
-						</div>
-						<div class="card-action">
-							<span>May 2021 - October 2021 | Nairobi, Kenya</span>
-						</div>
-					</div>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-code"></i>
+                                <div>
+                                    <strong>Languages</strong>
+                                    <span>Python, JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-database"></i>
+                                <div>
+                                    <strong>Databases</strong>
+                                    <span
+                                        >MySQL, PostgreSQL, MongoDB,
+                                        SQLite</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <div>
+                                    <strong>Frameworks</strong>
+                                    <span>Django, FastAPI, Flask, Node.js</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-cloud"></i>
+                                <div>
+                                    <strong>Tools &amp; Cloud</strong>
+                                    <span>Git, Docker, AWS, GCP, Nginx</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					<!-- Experience 2 -->
-					<div class="card">
-						<div class="card-content">
-							<div class="row">
-								<div class="col s12 m2">
-									<a href="https://www.cloudfactory.co.ke" target="_blank"
-										><img
-											alt="Cloud Factory logo"
-											src="/assets/img/cloudfactory.png"
-											class="responsive-img center-block"
-									/></a>
-								</div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Years of Dev</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">CTO</span>
+                            <span class="stat-label">Current Role</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Live Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-								<!-- <div class="col s12 m10"> -->
-								<div class="col s12 m10">
-									<p>
-										<span class="card-title"
-											><a
-												href="https://www.cloudfactory.co.ke"
-												class="teal-text hoverline"
-												>Cloud Factory</a
-											></span
-										>
-									</p>
-								</div>
-							</div>
-							<div class="role brown-text text-darken-2">
-								Data Entry Specialist
-							</div>
-							<ul>
-								<li>
-									Entered and verified data from various sources, ensuring
-									accuracy and completeness, which improved data integrity and
-									operational efficiency.
-								</li>
-								<li>
-									Conducted quality checks and resolved discrepancies, enhancing
-									the overall quality of data and reducing errors in reporting.
-								</li>
-								<li>
-									Generated detailed reports and documents, providing essential
-									insights for strategic planning and performance monitoring.
-								</li>
-								<li>
-									Coordinated with team members and departments, facilitating
-									efficient information flow and supporting various
-									administrative tasks, contributing to streamlined operations.
-								</li>
-							</ul>
-						</div>
-						<div class="card-action">
-							<span>June 2018 - March 2021 | Nairobi, Kenya</span>
-						</div>
-					</div>
-				</div>
-			</section>
+        <!-- ========================================
+             EXPERIENCE
+             ======================================== -->
+        <section id="experience" class="section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <!-- CTO -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">
+                                        Chief Technology Officer (CTO)
+                                    </h3>
+                                    <a
+                                        href="https://www.viewtech.co.ke"
+                                        target="_blank"
+                                        class="timeline-company"
+                                    >
+                                        Viewtech Limited — SasaPay
+                                    </a>
+                                </div>
+                                <span class="timeline-date"
+                                    >May 2025 – Present</span
+                                >
+                            </div>
+                            <p class="timeline-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nairobi, Kenya
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>
+                                    Leading the overall technology vision and
+                                    strategy for SasaPay, aligning the
+                                    engineering roadmap with business
+                                    objectives.
+                                </li>
+                                <li>
+                                    Overseeing architecture decisions across
+                                    Fintech products including WAAS, payment
+                                    APIs, and developer platforms.
+                                </li>
+                                <li>
+                                    Managing and mentoring cross-functional
+                                    engineering teams across software
+                                    development and DevOps.
+                                </li>
+                                <li>
+                                    Driving adoption of scalable cloud
+                                    infrastructure and CI/CD practices across
+                                    all product lines.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-			<!-- Fourth Section: Projects -->
-			<section id="projects" class="section scrollspy">
-				<h3 class="page-title white-text teal">Projects</h3>
-				<div class="container">
-					<div class="row">
-						<div class="col s12 m6 l4">
-							<div class="card medium">
-								<div class="card-image waves-effect waves-block waves-light">
-									<img
-										alt="music streaming app"
-										src="/assets/img/servertabs-logo.png"
-										style="height: 100%; width: 100%"
-										class="activator"
-									/>
-								</div>
-								<div class="card-content">
-									<span class="card-title activator teal-text hoverline"
-										>Uptime Monitoring Web-App<i
-											class="mdi-navigation-more-vert right"
-										></i
-									></span>
-									<p>
-										An uptime monitoring service that simplifies tracking the
-										uptime status of your online services
-									</p>
-								</div>
-								<div class="card-reveal">
-									<!-- TODO: change this -- only close button -->
-									<!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-									<span class="card-title grey-text"
-										><small>Accomplishments</small
-										><i class="mdi-navigation-close right"></i
-									></span>
-									<ul>
-										<li><b>Tools:</b> Django,Celery,Mysql, ReactJs, AWS,S3</li>
-										<li>Uptime monitoring.</li>
-										<li>SSL monitoring</li>
-										<li>Domain monitoring.</li>
-										<li>Incident alerts.</li>
-										<li>Multi-user support.</li>
-									</ul>
-									<div class="card-action">
-										<a
-											aria-label="Visit "
-											href="https://www.servertabs.com"
-											target="_blank"
-											data-position="top"
-											data-tooltip="View Online"
-											class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-											><i class="fa fa-external-link"></i
-										></a>
-										<a
-											aria-label="Visit the GitHub repo for  project"
-											href="#"
-											target="_blank"
-											data-position="top"
-											data-tooltip="View Source"
-											class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-											><i class="fa fa-github"></i
-										></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- SasaPay SDK -->
-						<div class="col s12 m6 l4">
-							<div class="card medium">
-								<div class="card-image waves-effect waves-block waves-light">
-									<img
-										alt="music streaming app"
-										src="/assets/img/sasapay.png"
-										style="height: 100%; width: 100%"
-										class="activator"
-									/>
-								</div>
-								<div class="card-content">
-									<span class="card-title activator teal-text hoverline"
-										>SasaPay APIs PyPi Package<i
-											class="mdi-navigation-more-vert right"
-										></i
-									></span>
-									<p>A Python wrapper for the SasaPay APIs.</p>
-								</div>
-								<div class="card-reveal">
-									<!-- TODO: change this -- only close button -->
-									<!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-									<span class="card-title grey-text"
-										><small>Accomplishments</small
-										><i class="mdi-navigation-close right"></i
-									></span>
-									<ul>
-										<li><b>Tools:</b> Python</li>
-										<li>
-											Package reduces SasaPay APIs integration time by 80%.
-										</li>
-									</ul>
-									<div class="card-action">
-										<a
-											aria-label="Visit "
-											href="https://pypi.org/project/sasapay-sdk/"
-											target="_blank"
-											data-position="top"
-											data-tooltip="View Online"
-											class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-											><i class="fa fa-external-link"></i
-										></a>
-										<a
-											aria-label="Visit the GitHub repo for  project"
-											href="#"
-											target="_blank"
-											data-position="top"
-											data-tooltip="View Source"
-											class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-											><i class="fa fa-github"></i
-										></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Prompter -->
-						<div class="col s12 m6 l4">
-							<div class="card medium">
-								<div class="card-image waves-effect waves-block waves-light">
-									<img
-										alt="ai app"
-										src="/assets/img/prompter.png"
-										style="height: 100%; width: 100%"
-										class="activator"
-									/>
-								</div>
-								<div class="card-content">
-									<span class="card-title activator teal-text hoverline"
-										>AI Prompts Sharing Web-App<i
-											class="mdi-navigation-more-vert right"
-										></i
-									></span>
-									<p>
-										A web app that allows users to discover,create and share
-										creative ai powered prompts.
-									</p>
-								</div>
-								<div class="card-reveal">
-									<!-- TODO: change this -- only close button -->
-									<!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-									<span class="card-title grey-text"
-										><small>Accomplishments</small
-										><i class="mdi-navigation-close right"></i
-									></span>
-									<ul>
-										<li><b>Tools:</b> NextJS</li>
-										<li>Login with Google.</li>
-										<li>Create,Edit and Delete Prompts</li>
-										<li>View Other people's prompts.</li>
-										<li>Search by prompt,tag or username.</li>
-										<li>View prompts by tags(Click on tag).</li>
-									</ul>
-									<div class="card-action">
-										<a
-											aria-label="Visit "
-											href="https://prompter-livid.vercel.app"
-											target="_blank"
-											data-position="top"
-											data-tooltip="View Online"
-											class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-											><i class="fa fa-external-link"></i
-										></a>
-										<a
-											aria-label="Visit the GitHub repo for  project"
-											href="https://github.com/SimonOkello/chat-gpt-prompt-manager"
-											target="_blank"
-											data-position="top"
-											data-tooltip="View Source"
-											class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-											><i class="fa fa-github"></i
-										></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- HashLix -->
-						<div class="col s12 m6 l4">
-							<div class="card medium">
-								<div class="card-image waves-effect waves-block waves-light">
-									<img
-										alt="ai app"
-										src="/assets/img/hashlix.png"
-										style="height: 100%; width: 100%"
-										class="activator"
-									/>
-								</div>
-								<div class="card-content">
-									<span class="card-title activator teal-text hoverline"
-										>HashLix<i class="mdi-navigation-more-vert right"></i
-									></span>
-									<p>
-										HashLix retrieves customer mobile numbers by converting
-										M-PESA hashed numbers back to their original form.
-									</p>
-								</div>
-								<div class="card-reveal">
-									<!-- TODO: change this -- only close button -->
-									<!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-									<span class="card-title grey-text"
-										><small>Accomplishments</small
-										><i class="mdi-navigation-close right"></i
-									></span>
-									<ul>
-										<li><b>Tools:</b> Python and ReactJS</li>
-										<li>Create an account.</li>
-										<li>Create API Key</li>
-										<li>TopUp your credits(Min KES 50)</li>
-										<li>Start decoding M-PESA hashed numbers.</li>
-										<li>Integrate to your system over APIs</li>
-									</ul>
-									<div class="card-action">
-										<a
-											aria-label="Visit "
-											href="https://www.hashlix.com"
-											target="_blank"
-											data-position="top"
-											data-tooltip="View Online"
-											class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-											><i class="fa fa-external-link"></i
-										></a>
-										<!-- <a
-											aria-label="Visit the GitHub repo for  project"
-											href="#"
-											target="_blank"
-											data-position="top"
-											data-tooltip="View Source"
-											class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-											><i class="fa fa-github"></i
-										></a> -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                    <!-- Sr. Engineer -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">
+                                        Sr. Software &amp; DevOps Engineer
+                                    </h3>
+                                    <a
+                                        href="https://www.viewtech.co.ke"
+                                        target="_blank"
+                                        class="timeline-company"
+                                    >
+                                        Viewtech Limited — SasaPay
+                                    </a>
+                                </div>
+                                <span class="timeline-date"
+                                    >Dec 2021 – May 2025</span
+                                >
+                            </div>
+                            <p class="timeline-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nairobi, Kenya
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>
+                                    Created and maintained the Wallet as a
+                                    Service (WAAS) API, enhancing service
+                                    adoption by <strong>60%</strong>.
+                                </li>
+                                <li>
+                                    Implemented C2B, B2C, and B2B payment and
+                                    collection APIs, boosting transaction volume
+                                    by <strong>30%</strong> and user
+                                    satisfaction by <strong>25%</strong>.
+                                </li>
+                                <li>
+                                    Updated the SasaPay Developer portal and API
+                                    docs, enhancing developer engagement by
+                                    <strong>40%</strong> and reducing
+                                    integration issues by <strong>30%</strong>.
+                                </li>
+                                <li>
+                                    Led API integrations with partner systems,
+                                    expanding the partner ecosystem by
+                                    <strong>25%</strong> and increasing API
+                                    usage by <strong>30%</strong>.
+                                </li>
+                                <li>
+                                    Supported client onboarding, improving
+                                    retention by <strong>15%</strong> and
+                                    reducing onboarding time by
+                                    <strong>20%</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-			<!-- Fifth Section: Skills -->
-			<section id="skills" class="section scrollspy">
-				<h3 class="page-title white-text teal">Skills</h3>
-				<div class="container">
-					<!-- Languages and Databases -->
-					<div class="card">
-						<div class="card-content">
-							<h4 class="brown-text light">Languages and Databases</h4>
-							<div class="row text-center">
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/python-logo-1-300x300.jpg"
-										class="responsive-img"
-									/>Python
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/react.png"
-										class="responsive-img"
-									/>ReactJS
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/mysql-logo-1-300x300.jpg"
-										class="responsive-img"
-									/>MySQL
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/postgresql-logo.png"
-										class="responsive-img"
-									/>PostgreSQL
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/shell-logo-1-300x300.jpg"
-										class="responsive-img"
-									/>Shell Scripting
-								</div>
-							</div>
-						</div>
-					</div>
+                    <!-- Sama -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">
+                                        Quality Analyst
+                                    </h3>
+                                    <a
+                                        href="https://www.sama.com"
+                                        target="_blank"
+                                        class="timeline-company"
+                                        >Sama</a
+                                    >
+                                </div>
+                                <span class="timeline-date"
+                                    >May 2021 – Oct 2021</span
+                                >
+                            </div>
+                            <p class="timeline-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nairobi, Kenya
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>
+                                    Reviewed and assessed annotated data for AI
+                                    algorithms to ensure accuracy and quality.
+                                </li>
+                                <li>
+                                    Oversaw agent work to ensure compliance with
+                                    client requirements and internal standards.
+                                </li>
+                                <li>
+                                    Monitored KPIs such as Total Process Time
+                                    (TPT) and throughput to gauge agent
+                                    efficiency.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-					<div class="card">
-						<div class="card-content">
-							<h4 class="brown-text light">Libraries</h4>
-							<div class="row text-center">
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/numpy-logo-1-500x500.jpg"
-										class="responsive-img"
-									/>NumPy
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/pandas-logo-2-500x500.jpg"
-										class="responsive-img"
-									/>Pandas
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/celery.png"
-										class="responsive-img"
-									/>Celery
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/matplotlib-logo-1-500x500.jpg"
-										class="responsive-img"
-									/>matplotlib
-								</div>
-							</div>
-						</div>
-					</div>
+                    <!-- Cloud Factory -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">
+                                        Data Entry Specialist
+                                    </h3>
+                                    <a
+                                        href="https://www.cloudfactory.co.ke"
+                                        target="_blank"
+                                        class="timeline-company"
+                                        >Cloud Factory</a
+                                    >
+                                </div>
+                                <span class="timeline-date"
+                                    >Jun 2018 – Mar 2021</span
+                                >
+                            </div>
+                            <p class="timeline-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nairobi, Kenya
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>
+                                    Entered and verified data from various
+                                    sources, ensuring accuracy and completeness.
+                                </li>
+                                <li>
+                                    Conducted quality checks and resolved
+                                    discrepancies, enhancing overall data
+                                    quality.
+                                </li>
+                                <li>
+                                    Generated detailed reports for strategic
+                                    planning and performance monitoring.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<!-- Frameworks -->
-					<div class="card">
-						<div class="card-content">
-							<h4 class="brown-text light">Frameworks</h4>
-							<div class="row text-center">
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/django-logo.webp"
-										class="responsive-img"
-									/>Django
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/flask-logo.png"
-										class="responsive-img"
-									/>Flask
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/fastapi.png"
-										class="responsive-img"
-									/>FastAPI
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/nodejs.png"
-										class="responsive-img"
-									/>NodeJS
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/react.png"
-										class="responsive-img"
-									/>ReactJS
-								</div>
-							</div>
-						</div>
-					</div>
+        <!-- ========================================
+             PROJECTS
+             ======================================== -->
+        <section id="projects">
+            <div class="section-container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- ServerTabs -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="/assets/img/servertabs-logo.png"
+                                alt="ServerTabs – Uptime Monitoring"
+                            />
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">
+                                Uptime Monitoring Web-App
+                            </h3>
+                            <p class="project-desc">
+                                An uptime monitoring service that simplifies
+                                tracking the uptime status of your online
+                                services, with SSL and domain monitoring.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">Celery</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">ReactJS</span>
+                                <span class="tag">AWS</span>
+                            </div>
+                            <div class="project-links">
+                                <a
+                                    href="https://www.servertabs.com"
+                                    target="_blank"
+                                    class="project-link"
+                                >
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-					<!-- Other -->
-					<div class="card">
-						<div class="card-content">
-							<h4 class="brown-text light">Other</h4>
-							<div class="row text-center">
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/git.png"
-										class="responsive-img"
-									/>Git
-								</div>
-								<div class="col s4 m2">
-									<img
-										alt=""
-										src="/assets/img/aws.png"
-										class="responsive-img"
-									/>AWS
-								</div>
-							</div>
-						</div>
-					</div>
+                    <!-- SasaPay SDK -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="/assets/img/sasapay.png"
+                                alt="SasaPay Python SDK"
+                            />
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">
+                                SasaPay APIs PyPi Package
+                            </h3>
+                            <p class="project-desc">
+                                A Python wrapper for the SasaPay APIs. Reduces
+                                SasaPay APIs integration time by 80%.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PyPi</span>
+                                <span class="tag">Fintech</span>
+                            </div>
+                            <div class="project-links">
+                                <a
+                                    href="https://pypi.org/project/sasapay-sdk/"
+                                    target="_blank"
+                                    class="project-link"
+                                >
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i>
+                                    View on PyPi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-					<!-- certifications -->
-					<div class="card">
-						<div class="card-content">
-							<h4 class="brown-text light">Certificates</h4>
-							<div class="row text-left">
-								<div class="container">
-									<div class="row">
-										<div class="col s12 m6 l6">
-											<div class="card">
-												<div class="card-image">
-													<img src="/assets/img/devops.png" />
-												</div>
-												<div class="card-content">
-													<span class="card-title teal-text"
-														>DevOps (Moringa School)</span
-													>
-													<br />
-													<p>Sep-Nov 2023</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                    <!-- Prompter -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="/assets/img/prompter.png"
+                                alt="Prompter – AI Prompts App"
+                            />
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">
+                                AI Prompts Sharing Web-App
+                            </h3>
+                            <p class="project-desc">
+                                A web app that allows users to discover, create
+                                and share creative AI-powered prompts. Login
+                                with Google, search by tag or username.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">AI</span>
+                                <span class="tag">Full Stack</span>
+                            </div>
+                            <div class="project-links">
+                                <a
+                                    href="https://prompter-livid.vercel.app"
+                                    target="_blank"
+                                    class="project-link"
+                                >
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i>
+                                    Live Demo
+                                </a>
+                                <a
+                                    href="https://github.com/SimonOkello/chat-gpt-prompt-manager"
+                                    target="_blank"
+                                    class="project-link"
+                                >
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-			<!-- Seventh Section: Education -->
-			<section id="education" class="section scrollspy">
-				<h3 class="page-title white-text teal">Education</h3>
-				<div class="container">
-					<div class="row">
-						<!-- Education -->
-						<div class="col s12 m6 l6">
-							<div class="card">
-								<div class="card-content">
-									<p>
-										<span class="card-title"
-											><a
-												href="https://www.jkuat.ac.ke"
-												target="_blank"
-												class="teal-text hoverline"
-												>Jomo Kenyatta University of Agr. and
-												Technology(JKUAT)</a
-											></span
-										>
-									</p>
-									<p class="brown-text">Nairobi, Kenya</p>
-									<p>
-										<b>Degree: </b>Bachelor of Business Information Technology
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                    <!-- HashLix -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="/assets/img/hashlix.png"
+                                alt="HashLix – M-PESA hash decoder"
+                            />
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">HashLix</h3>
+                            <p class="project-desc">
+                                Retrieves customer mobile numbers by converting
+                                M-PESA hashed numbers back to their original
+                                form via a simple API.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">ReactJS</span>
+                                <span class="tag">Fintech</span>
+                            </div>
+                            <div class="project-links">
+                                <a
+                                    href="https://www.hashlix.com"
+                                    target="_blank"
+                                    class="project-link"
+                                >
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			<!-- Eight Section: Contact -->
-			<section id="contact" class="section scrollspy full-height">
-				<h3 class="page-title white-text teal">Contact</h3>
-				<div class="container">
-					<p>
-						<a
-							aria-label="Call Simon"
-							data-position="top"
-							data-tooltip="Call Simon"
-							class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-							><i class="fa fa-phone"></i
-							><a aria-label="Call Simon">+254702440280</a></a
-						>
-					</p>
-					<p>
-						<a
-							aria-label="Email Simon"
-							href="mailto:simonokello93@gmail.com"
-							target="_blank"
-							data-position="top"
-							data-tooltip="Email Simon"
-							class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-							><i class="fa fa-envelope"></i
-							><a
-								aria-label="Email Simon"
-								href="mailto:simonokello93@gmail.com"
-								class="hoverline"
-								>simonokello93@gmail.com</a
-							></a
-						>
-					</p>
-					<p>
-						<a
-							aria-label="View Simon on GitHub"
-							href="http://github.com/SimonOkello"
-							target="_blank"
-							data-position="top"
-							data-tooltip="View Simon on GitHub"
-							class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-							><i class="fa fa-github"></i
-							><a
-								aria-label="Simon on Github"
-								href="http://github.com/SimonOkello"
-								class="hoverline"
-								target="_blank"
-								>github.com/SimonOkello</a
-							></a
-						>
-					</p>
-					<p>
-						<a
-							aria-label="View Simon on LinkedIn"
-							href="http://linkedin.com/in/simonokello"
-							target="_blank"
-							data-position="top"
-							data-tooltip="View Simon on LinkedIn"
-							class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
-							><i class="fa fa-linkedin"></i
-							><a
-								aria-label="Simon on LinkedIn"
-								href="http://linkedin.com/in/simonokello"
-								class="hoverline"
-								target="_blank"
-								>linkedin.com/in/simonokello</a
-							></a
-						>
-					</p>
-				</div>
-			</section>
-		</main>
+        <!-- ========================================
+             SKILLS
+             ======================================== -->
+        <section id="skills" class="section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skills-category">
+                        <h3>Languages</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Shell Scripting</span>
+                        </div>
+                    </div>
 
-		<!-- typed.js -->
-		<script src="assets/vendor/typed.js/typed.min.js"></script>
-		<script type="text/javascript">
-			var typed = new Typed('.typing', {
-				strings: ['Pythonist', 'Developer', 'Fast Learner'],
-				loop: true,
-				typeSpeed: 80,
-				backSpeed: 40,
-			});
-		</script>
+                    <div class="skills-category">
+                        <h3>Frameworks</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">ReactJS</span>
+                            <span class="skill-tag">Next.js</span>
+                        </div>
+                    </div>
 
-		<!-- jQuery-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                    <div class="skills-category">
+                        <h3>Databases</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">SQLite</span>
+                        </div>
+                    </div>
 
-		<!-- Materialize - Compiled and minified JavaScript-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-		<script>
-			// Materialize - Initializers
-			$(document).ready(function () {
-				$('.scrollspy').scrollSpy();
-				// Initialize collapse button
-				$('.button-collapse').sideNav({
-					menuWidth: 190, // Default is 240
-					edge: 'left', // Choose the horizontal origin
-					closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-				});
-			});
-		</script>
-	</body>
+                    <div class="skills-category">
+                        <h3>Libraries</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Celery</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>DevOps &amp; Cloud</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Nginx</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Certifications</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag cert-tag">
+                                <i
+                                    class="fa-solid fa-certificate"
+                                    style="margin-right: 0.3rem"
+                                ></i>
+                                DevOps — Moringa School (2023)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             EDUCATION
+             ======================================== -->
+        <section id="education">
+            <div class="section-container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>
+                            <a href="https://www.jkuat.ac.ke" target="_blank">
+                                Jomo Kenyatta University of Agriculture &amp;
+                                Technology (JKUAT)
+                            </a>
+                        </h3>
+                        <p class="edu-degree">
+                            Bachelor of Business Information Technology
+                        </p>
+                        <p class="edu-location">
+                            <i class="fa-solid fa-location-dot"></i> Nairobi,
+                            Kenya
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTACT
+             ======================================== -->
+        <section id="contact" class="section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-intro">
+                    I'm open to new opportunities. Whether you have a role in
+                    mind, a project to discuss, or just want to say hi — my
+                    inbox is always open.
+                </p>
+                <div class="contact-grid">
+                    <a href="tel:+254702440280" class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <span>+254 702 440 280</span>
+                        </div>
+                    </a>
+                    <a
+                        href="mailto:simonokello93@gmail.com"
+                        class="contact-card"
+                    >
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <span>simonokello93@gmail.com</span>
+                        </div>
+                    </a>
+                    <a
+                        href="http://github.com/SimonOkello"
+                        target="_blank"
+                        class="contact-card"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>github.com/SimonOkello</span>
+                        </div>
+                    </a>
+                    <a
+                        href="http://linkedin.com/in/simonokello"
+                        target="_blank"
+                        class="contact-card"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <span>linkedin.com/in/simonokello</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Designed &amp; built by Simon Okello &copy;
+                <span id="year"></span>
+            </p>
+        </footer>
+
+        <!-- typed.js -->
+        <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+        <script>
+            // Dynamic year
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+
+            // Typed.js
+            new Typed(".typing", {
+                strings: [
+                    "CTO",
+                    "Pythonist",
+                    "Backend Developer",
+                    "DevOps Engineer",
+                    "Problem Solver",
+                ],
+                loop: true,
+                typeSpeed: 80,
+                backSpeed: 40,
+                backDelay: 1500,
+            });
+
+            // Navbar scroll effect
+            const navbar = document.getElementById("navbar");
+            window.addEventListener(
+                "scroll",
+                () => {
+                    navbar.classList.toggle("scrolled", window.scrollY > 60);
+                },
+                { passive: true },
+            );
+
+            // Mobile nav toggle
+            const navToggle = document.getElementById("navToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            navToggle.addEventListener("click", () => {
+                const isOpen = navLinks.classList.toggle("open");
+                navToggle.classList.toggle("open", isOpen);
+                navToggle.setAttribute("aria-expanded", isOpen);
+            });
+
+            document.querySelectorAll(".nav-links a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    navLinks.classList.remove("open");
+                    navToggle.classList.remove("open");
+                    navToggle.setAttribute("aria-expanded", "false");
+                });
+            });
+
+            // Active nav link on scroll
+            const sections = document.querySelectorAll("section[id]");
+            const navItems = document.querySelectorAll(
+                '.nav-links a[href^="#"]',
+            );
+
+            const activateNav = () => {
+                let current = "";
+                sections.forEach((section) => {
+                    if (window.scrollY >= section.offsetTop - 120) {
+                        current = section.getAttribute("id");
+                    }
+                });
+                navItems.forEach((item) => {
+                    item.classList.toggle(
+                        "active",
+                        item.getAttribute("href") === "#" + current,
+                    );
+                });
+            };
+
+            window.addEventListener("scroll", activateNav, { passive: true });
+
+            // Scroll-in animations
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+            );
+
+            document
+                .querySelectorAll(
+                    ".timeline-item, .project-card, .skills-category, .education-card, .contact-card, .stat-card",
+                )
+                .forEach((el) => {
+                    el.classList.add("fade-in");
+                    observer.observe(el);
+                });
+        </script>
+    </body>
 </html>
